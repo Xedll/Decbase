@@ -1,0 +1,108 @@
+.about {
+   margin-top: 236px;
+   margin-bottom: 205px;
+   &__container {
+      display: flex;
+      flex-direction: column;
+      &>*:not(:last-child) {
+         margin-bottom: 225px;
+      }
+      &>*:nth-child(2n) {
+         flex-direction: row-reverse;
+      }
+   }
+
+   &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__itemImage {
+      max-width: 50%;
+      height: 725px;
+      width: 100%;
+      position: relative;
+      &>span {
+         display: block;
+         width: 100%;
+         height: 100%;
+         background: url(../images/about1.avif) center/cover no-repeat;
+         border-radius: 140px 0px;
+      }
+      &>p{
+         position: absolute;
+         top: -32px;
+         left: -36px;
+         width: 100%;
+         height: 100%;
+         border: 2px solid #B0855B;
+         border-radius: 140px 0px;
+         z-index: -1;
+      }
+      &.rev>p {
+         top: 28px;
+         left: 31px;
+      }
+   }
+
+   &__itemContent {
+      max-width: 40%;
+   }
+
+   &__itemSubitle {
+      color: #646464;
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      &.big {
+         color: #000;
+         font-family: Open Sans;
+         font-size: 288px;
+         font-style: normal;
+         font-weight: 700;
+         letter-spacing: -2.88px;
+         background: url(../images/num-bg.avif) center/cover no-repeat;
+         background-clip: text;
+         color: transparent;
+      }
+   }
+
+   &__itemTitle {
+      color: #212121;
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 500;
+      margin-bottom: 22px;
+      &.big {
+         color: #212121;
+font-family: Poppins;
+font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: 65px; /* 130% */
+letter-spacing: 2px;
+      }
+   }
+
+   &__itemAbout {
+      color: #646464;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 45px;
+      line-height: 30px;
+   }
+
+   &__itemLink {
+      color: #FFF;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      border-radius: 20px 0px;
+      background: #37806B;
+      padding: 5px 20px;
+      }
+}

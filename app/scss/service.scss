@@ -1,0 +1,121 @@
+.service {
+   margin-top: 160px;
+   &__container {
+
+   }
+
+   &__title {
+      color: #646464;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 140% */
+letter-spacing: -0.2px;
+   }
+
+   &__subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &>p{
+         color: #212121;
+         font-family: Poppins;
+         font-size: 48px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: 78px; /* 162.5% */
+      }
+      margin-bottom: 50px;
+   }
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+      &>*{
+         background: inherit;
+         width: 30px;
+         height: 30px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 50%;
+         box-shadow: 4px 4px 11px 0px rgba(34, 60, 80, 0.2);
+      }
+      &>*:not(:last-child) {
+         margin-right: 14px;
+      }
+   }
+
+   &__prev {
+   }
+
+   &__next {
+      color: white;
+      background: #37806B;
+   }
+
+   &__content {
+      position: relative;
+      height: 190px;
+      margin: 0 -10px;
+      overflow-x: hidden;
+   }
+
+   &__line {
+      display: grid;
+      grid-template-columns: repeat(7,425px);
+      gap: 37px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 190px;
+      transition:all .5s;
+   }
+
+
+   &__item {
+      display: flex;
+      padding: 35px 20px;
+      border-radius: 60px 0px;
+      background: #FFF;
+      box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.14);
+      max-width: 425px;
+      max-height: 170px;
+      &.alt {
+         background: #CAA892;
+      }
+   }
+   &__itemIcon {
+      margin-right: 20px;
+   }
+   &__itemContent {
+      display: flex;
+      flex-direction: column;
+      &>*:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+   &__itemTItle {
+      &.alt {
+         color: #FFF;
+      }
+      color: #212121;
+      font-family: Open Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+   }
+   &__itemAbout {
+      &.alt {
+         color: #FFF;
+      }
+      color: #646464;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: -0.18px;
+   }
+}
+

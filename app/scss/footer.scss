@@ -1,0 +1,83 @@
+.footer {
+   background: #F8F8F8;
+   padding-top: 95px;
+   &__container {
+   padding-bottom: 70px;
+   display: flex;
+   }
+
+   &__logo {
+      display: flex;
+      max-width: 25%;
+      flex-direction: column;
+      margin-right: 36px;
+   }
+
+   &__logoImage {
+margin-bottom: 15px;
+   }
+
+   &__logoText {
+      color: #646464;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+   }
+
+   &__nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      &>*:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__listTitle {
+      color: #212121;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+   }
+
+   &__listItem {
+      color: #646464;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+   }
+   &__links {
+      display: flex;
+      &>*:not(:last-child) {
+         margin-right: 8px;
+      }
+   }
+   &__copyright {
+      color: #646464;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 15px 0 22px 0;
+text-align: center;
+&>a {
+   color: #37806B;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+   }
+}

@@ -1,0 +1,127 @@
+.feedback {
+   margin: 165px 0;
+   &__container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__subtitle {
+      color: #646464;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-align: center;
+   }
+
+   &__title {
+      color: #212121;
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-align: center;
+   }
+
+   &__content {
+   }
+
+   &__buttons {
+      margin-bottom: 85px;
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      margin-left: auto;
+      &>*{
+         background: inherit;
+         width: 30px;
+         height: 30px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 50%;
+         box-shadow: 4px 4px 11px 0px rgba(34, 60, 80, 0.2);
+      }
+      &>*:not(:last-child) {
+         margin-right: 14px;
+      }
+      &>*:last-child {
+         color: white;
+      background: #37806B;
+      }
+   }
+
+   &__slider {
+      position: relative;
+      overflow-x: hidden;
+      height: 250px;
+      width: 1300px;
+      margin: 0 auto;
+   }
+
+   &__line {
+      transition: all .5s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: grid;
+      grid-template-columns: repeat(4,590px);
+      column-gap: 80px;
+   }
+
+   &__item {
+      padding: 40px 40px 60px 100px;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      border-radius: 70px 0px;
+      background: #FFF;
+      box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+      margin-left: 65px;
+   }
+
+   &__itemImage {
+      position: absolute;
+      top: 0;
+      left: -60px;
+      width: 130px;
+      height:130px;
+      border-radius: 35px 0px;
+      background: var(--bg) center/cover no-repeat;
+   }
+
+   &__itemContent {
+   }
+
+   &__itemName {
+      color: #212121;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+& span {
+   color: #646464;
+font-size: 16px;
+font-weight: 400;
+}
+   }
+
+
+   &__itemAbout {
+      color: #646464;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+   }
+
+   &__itemQuotes {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+   }
+}
